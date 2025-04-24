@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Exemplo</title>
+    <script>
+    
+
+    function processaradicao() {
+
+        document.getElementById("resultado").innerHTML =
+        parseFloat(document.getElementById("meuInput1").value) + parseFloat(document.getElementById("meuInput2").value)
+      }
+
+    function processarsubtracao() {
+      
+        document.getElementById("resultado").innerHTML =
+      parseFloat(document.getElementById("meuInput1").value) - parseFloat(document.getElementById("meuInput2").value)
+      }
+    
+    function processarmultiplicacao() {
+      
+        document.getElementById("resultado").innerHTML =
+      parseFloat(document.getElementById("meuInput1").value) * parseFloat(document.getElementById("meuInput2").value)
+      }
+
+      function processardivisao() {
+      
+      document.getElementById("resultado").innerHTML =
+    parseFloat(document.getElementById("meuInput1").value) / parseFloat(document.getElementById("meuInput2").value)
+}
+
+    </script>
+  </head>
+  <body>
+    <h1>CALCULADORA</h1>
+    <input id="meuInput1" type="mumber">
+    <input id="meuInput2" type="number">
+    <button id="meuBotaoAdicao" onclick="processaradicao()">+</button>
+    <button id="meuBotaoSubtracao" onclick="processarsubtracao()">-</button>
+    <button id="meuBotaoMultiplicacao" onclick="processarmultiplicacao()">*</button>
+    <button id="meuBotaoDivisao" onclick="processardivisao()">/</button>
+    <div id="resultado">RESULTADO</div>
+
+</body>
+</html>
